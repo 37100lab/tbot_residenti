@@ -39,7 +39,7 @@ def echo(update: Update, context: CallbackContext) -> None:
     context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
 
 def main():
-    updater = Updater("1900357611:AAE-V4xSRO_JIjdpHJOdt53Y14dFFbe_miE")
+    updater = Updater("bot-id")
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(CommandHandler("start", start))
